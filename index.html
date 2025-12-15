@@ -3,250 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandra Nail Master</title>
+    <title>Цены | Александра | Мастер маникюра</title>
     <style>
         * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-            padding: 0;
-            font-family: "Georgia", "Times New Roman", serif;
-            color: #333; /* Dark gray text */
-            background-color: white;
+            font-family: 'Times New Roman', serif;
             line-height: 1.6;
-        }
-
-        .container {
+            color: #000;
+            background-color: #fff;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 20px;
         }
 
-        /* Banner Styles */
-        .banner {
-            width: 100%;
-            height: 400px;
-            background-image: url('banner.webp');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        header {
             text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #000;
         }
 
-        .banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: black;
-            opacity: 0.7;
-        }
-
-        .banner h1 {
-            color: white;
-            font-size: 2.5em;
+        .logo {
+            font-size: 2.5rem;
             font-weight: bold;
-            margin: 0;
-            z-index: 1;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
         }
 
-        .divider-line {
-            width: 100%;
-            height: 1px;
-            background-color: black;
-            margin: 40px 0;
+        .navigation {
+            margin: 20px 0;
         }
 
-        .intro-text {
+        .navigation a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 15px;
+            border: 1px solid #000;
+            padding: 8px 15px;
+        }
+
+        .content {
+            padding: 40px 0;
             text-align: center;
-            color: white;
-            font-size: 1.8em;
-            z-index: 1;
-            margin: 0;
         }
 
-        .booking-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: white;
-            color: black;
-            border: 2px solid black;
-            text-decoration: none;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-
-        .booking-btn:hover {
-            font-style: italic;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 60px 0;
-        }
-
-        h2 {
-            display: inline-block;
-            border: 2px solid black;
-            padding: 16px;
-            margin-bottom: 24px;
-        }
-
-        .content-wrapper {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-        }
-
-        .image-container {
-            flex-shrink: 0;
-        }
-
-        .avatar {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .text-content {
-            flex-grow: 1;
-        }
-
-        .text-content p {
-            margin-bottom: 1em;
-            text-align: justify;
-        }
-
-        .button-row {
-            margin-top: 20px;
-        }
-
-        .action-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            border: 2px solid black;
-            text-decoration: none;
-            margin-right: 16px;
-            margin-bottom: 10px; /* Space between buttons on mobile */
-        }
-
-        .action-btn:hover {
-            font-style: italic;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            font-style: italic;
-        }
-
-        /* Footer */
         footer {
             text-align: center;
-            padding-top: 60px;
-            padding-bottom: 20px;
+            padding: 30px 0;
+            border-top: 1px solid #000;
+            margin-top: 40px;
         }
 
-        /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .content-wrapper {
-                flex-direction: column;
-                text-align: center;
+            body {
+                padding: 10px;
             }
 
-            .avatar {
-                width: 120px;
-                height: 120px;
-                margin-bottom: 20px;
-            }
-
-            .banner h1 {
-                font-size: 1.8em;
-            }
-
-            .intro-text {
-                font-size: 1.4em;
+            header {
+                padding: 20px 0;
             }
         }
     </style>
-    <script src="https://dikidi.ru/js/widget.min.js?uid=200492"></script>
 </head>
 <body>
+    <header>
+        <div class="logo">ALEXANDRA NAIL MASTER</div>
+        <h1>Услуги и цены</h1>
+        <div class="navigation">
+            <a href="index.html">Главная</a>
+            <a href="portfolio.html">Портфолио</a>
+            <a href="diplomas.html">Дипломы</a>
+            <a href="prices.html">Цены</a>
+        </div>
+    </header>
 
-    <div class="banner">
-        <h1>Alexandra Nail Master</h1>
-    </div>
-
-    <div class="divider-line"></div>
-    <div class="container">
-        <h2 class="intro-text">Красота на кончиках пальцев</h2>
-        <a href="https://dikidi.ru/#widget=200492" class="booking-btn">Записаться</a>
-    </div>
-
-    <div class="container">
-        <section id="about">
-            <h2>Обо мне</h2>
-            <div class="content-wrapper">
-                <div class="image-container">
-                    <img src="master.webp" alt="Мастер маникюра" class="avatar">
-                </div>
-                <div class="text-content">
-                    <p>Привет! Меня зовут Александра, я профессиональный мастер маникюра и педикюра. Моя работа — это сочетание технического мастерства, творческого подхода и внимания к деталям. </p>
-                    <p>Делаю красивые, тонкие и прочные ногти за 1.5 часа: аккуратное покрытие, правильная архитектура, естественный вид.</p>
-                    <p>Работаю с любыми сложностями: отслойки, скручивания, низкие точки роста, ломкость и сколы. Все инструменты проходят полную стерилизацию по СанПиН. Безопасность — мой абсолютный приоритет. </p>
-                    <p>Уютный отдельный кабинет Чай, кофе, комфортная атмосфера. Поболтать или помолчать — чтобы ты могла расслабиться и просто довериться. </p>
-                    <p>Если ищешь модный маникюр, чистую технику и естественные красивые ногти — буду рада видеть тебя!</p>
-                    
-                    <p><strong>Профессиональное обучение:</strong><br>
-                    - Nika Nagel (2022–2024)<br>
-                    - ВладМиВа — подология</p>
-                    
-                    <p><strong>Участие в профессиональных мероприятиях:</strong><br>
-                    - NAILSREDA — международный фестиваль мастеров ногтевого сервиса 2022<br>
-                    - STEP BY STEP — всероссийская конференция мастеров маникюра и подологов 2023<br>
-                    - InterCHARM — международный конгресс мастеров ногтевого сервиса 2023–2024<br>
-                    - BEAUTY DAY — юбилейный конгресс nail-мастеров и подологов СНГ 2025</p>
-                </div>
-            </div>
-            <div class="button-row">
-                <a href="https://vk.com/album852032298_309594832" class="action-btn">Портфолио</a>
-                <a href="https://vk.com/album852032298_302338877" class="action-btn">Дипломы</a>
-                <a href="https://vk.com/album852032298_309594848" class="action-btn">Цены</a>
-            </div>
-        </section>
-
-        <section id="contacts">
-            <h2>Контакты</h2>
-            <div class="content-wrapper">
-                <div class="image-container">
-                    <img src="studio.webp" alt="Студия" class="avatar">
-                </div>
-                <div class="text-content">
-                    <p>г. Воронеж<br>Телефон: 12345</p>
-                    <a href="https://dikidi.ru/#widget=200492" class="booking-btn">Записаться</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    <main>
+        <div class="content">
+            <h2>Прайс-лист на услуги</h2>
+            <p>Классический маникюр - от ... руб.</p>
+            <p>Комбинированный маникюр - от ... руб.</p>
+            <p>Покрытие гель-лаком - от ... руб.</p>
+            <p>Дизайн ногтей - от ... руб.</p>
+            <!-- Добавьте остальные услуги -->
+        </div>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Александра Тельтевская.</p>
-        </div>
+        <p>&copy; 2025 Александра Тельтевская. Все права защищены.</p>
     </footer>
-
 </body>
 </html>
