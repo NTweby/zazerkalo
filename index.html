@@ -129,7 +129,14 @@
             border: 1px solid #000;
             padding: 20px;
             margin: 30px 0;
-            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .contact-image-container {
+            flex: 0 0 auto; /* Не растягивать, не сжимать, только auto */
         }
 
         .contact-image {
@@ -137,9 +144,12 @@
             height: 200px;
             object-fit: cover;
             display: block;
-            margin: 0 auto 20px;
             border: 1px solid #000;
             border-radius: 5px;
+        }
+
+        .contact-text {
+            flex: 1; /* Занимает оставшееся пространство */
         }
 
         .booking-btn {
@@ -151,6 +161,9 @@
             text-decoration: none;
             cursor: pointer;
             margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
 
         .booking-btn:hover {
@@ -171,9 +184,21 @@
                 flex-direction: column;
             }
 
-            .avatar, .event-image, .contact-image {
+            .avatar, .event-image {
                 width: 120px;
                 height: 120px;
+            }
+
+            .contact-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-image {
+                width: 120px;
+                height: 120px;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
     </style>
@@ -224,8 +249,16 @@
 
     <div class="contact-section">
         <h2 class="section-title">Контакты</h2>
-        <img src="studio.webp" alt="Студия" class="contact-image">
-        <p>г. Воронеж<br>Телефон: 12345</p>
+        <div class="contact-image-container">
+            <img src="studio.webp" alt="Студия" class="contact-image">
+        </div>
+        <div class="contact-text">
+            <p>Телефон: +7 (908) 139 93 73</p>
+            <p>Instagram: @zapililashura</p>
+            <p>ВКонтакте: @zapililashura</p>
+            <p>Адрес: г. Воронеж ул. Димитрова, д. 27</p>
+            <p>график работы с 07,00 до 00.00. Работаю по предварительной записи.</p>
+        </div>
         <a href="https://dikidi.ru/#widget=200492" class="booking-btn">Записаться</a>
     </div>
 
