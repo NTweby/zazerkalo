@@ -153,7 +153,10 @@
         }
 
         .booking-btn {
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             padding: 12px 24px;
             background-color: white;
             color: black;
@@ -163,7 +166,13 @@
             margin-top: 20px;
             margin-left: auto;
             margin-right: auto;
-            display: block;
+            text-align: center;
+        }
+
+        .booking-btn-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
         }
 
         .booking-btn:hover {
@@ -253,11 +262,13 @@
         </div>
         <div class="contact-text">
             <p>Телефон: +7 (908) 139 93 73</p>
-            <p>Instagram: @zapililashura</p>
-            <p>ВКонтакте: @zapililashura</p>
+            <p>Instagram: <a href="https://www.instagram.com/zapililashura?utm_source=qr&igsh=a3NzeWlhaGN5MjJu">@zapililashura</a></p>
+            <p>ВКонтакте: <a href="https://vk.com/zapililaShura">@zapililashura</a></p>
             <p>Адрес: г. Воронеж ул. Димитрова, д. 27</p>
             <p>график работы с 07,00 до 00.00. Работаю по предварительной записи.</p>
-            <a href="https://dikidi.ru/#widget=200492" class="booking-btn">Записаться</a>
+            <a href="https://dikidi.ru/#widget=200492" class="booking-btn">
+                <span class="booking-btn-text">Записаться</span>
+            </a>
         </div>
     </div>
 
