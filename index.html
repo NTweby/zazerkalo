@@ -40,26 +40,6 @@
             margin: 20px 0;
         }
 
-        .navigation {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .nav-btn {
-            padding: 8px 20px;
-            border: 1px solid #000;
-            background: none;
-            cursor: pointer;
-            text-decoration: none;
-            color: #000;
-        }
-
-        .nav-btn:hover {
-            background-color: #f0f0f0;
-        }
-
         /* Main Content Styles */
         .main-content {
             display: flex;
@@ -129,6 +109,21 @@
             flex-grow: 1;
         }
 
+        .nav-btn {
+            padding: 8px 20px;
+            border: 1px solid #000;
+            background: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+            margin: 10px auto;
+            display: inline-block;
+        }
+
+        .nav-btn:hover {
+            background-color: #f0f0f0;
+        }
+
         /* Contact Section */
         .contact-section {
             border: 1px solid #000;
@@ -180,11 +175,6 @@
                 width: 120px;
                 height: 120px;
             }
-
-            .navigation {
-                flex-direction: column;
-                align-items: center;
-            }
         }
     </style>
     <script src="https://dikidi.ru/js/widget.min.js?uid=200492"></script>
@@ -194,10 +184,6 @@
     <header>
         <div class="site-title">МАСТЕР МАНИКЮРА</div>
         <div class="tagline">Искусство на кончиках ваших пальцев</div>
-        <div class="navigation">
-            <a href="#" class="nav-btn">Главная</a>
-            <a href="portfolio.html" class="nav-btn">Портфолио</a>
-        </div>
     </header>
 
     <div class="main-content">
@@ -212,6 +198,7 @@
                     <p>Уютный отдельный кабинет Чай, кофе, комфортная атмосфера. Поболтать или помолчать — чтобы ты могла расслабиться и просто довериться.</p>
                     <p>Если ищешь модный маникюр, чистую технику и естественные красивые ногти — буду рада видеть тебя!</p>
                 </div>
+                <a href="#" class="nav-btn">Главная</a>
             </div>
         </div>
 
@@ -230,6 +217,7 @@
                     - InterCHARM — международный конгресс мастеров ногтевого сервиса 2023–2024<br>
                     - BEAUTY DAY — юбилейный конгресс nail-мастеров и подологов СНГ 2025</p>
                 </div>
+                <a href="portfolio.html" class="nav-btn">Портфолио</a>
             </div>
         </div>
     </div>
