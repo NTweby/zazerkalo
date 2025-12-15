@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новогодний подарок — Alexandra Nail</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Georgia", "Times New Roman", serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #000;
+        }
+
+        .site-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            margin: 20px 0;
+        }
+
+        /* Promo Banner Section */
+        .promo-section {
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 40px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .promo-image-container {
+            flex: 0 0 auto;
+        }
+
+        .promo-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        .promo-text {
+            flex: 1;
+        }
+
+        .promo-form {
+            margin-top: 20px;
+        }
+
+        .promo-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #000;
+            font-family: inherit;
+        }
+
+        .promo-form button {
+            padding: 12px 24px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .promo-form button:hover {
+            font-style: italic;
+            background-color: #f8f8f8;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            display: flex;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-box,
+        .education-section {
+            border: 1px solid #000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .section-title,
+        .education-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .avatar,
+        .event-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 20px;
+            border: 1px solid #000;
+        }
+
+        .content-text {
+            flex-grow: 1;
+        }
+
+        .nav-btn {
+            padding: 8px 20px;
+            border: 1px solid #000;
+            background: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: #000;
+            margin: 10px auto;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            border: 1px solid #000;
+            padding: 20px;
+            margin: 30px 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .contact-image-container {
+            flex: 0 0 auto;
+        }
+
+        .contact-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border: 1px solid #000;
+            border-radius: 5px;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .booking-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .booking-btn-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .booking-btn:hover {
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #000;
+            margin-top: 40px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .main-content,
+            .promo-section,
+            .contact-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .avatar, .event-image, .promo-image, .contact-image {
+                width: 120px;
+                height: 120px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .promo-form input,
+            .promo-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="site-title">ALEXANDRA NAIL</div>
+        <div class="tagline">Искусство на кончиках ваших пальцев</div>
+    </header>
+
+    <!-- Promo Section -->
+    <div class="promo-section">
+        <div class="promo-image-container">
+            <img src="newyear25.webp" alt="Новогодняя акция" class="promo-image">
+        </div>
+        <div class="promo-text">
+            <p><strong>Для новых клиентов — тёплый подарок:</strong> скидка 20 % на любой маникюр или педикюр.</p>
+            <p>Просто напишите своё имя и телефон в форму ниже — и я пришлю вам открытку со скидкой, новогодние дизайны и свободные окошки для записи.</p>
+            <form class="promo-form" id="leadForm">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <button type="submit">Получить открытку</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content (Обо мне + Обучение) -->
+    <div class="main-content">
+        <div class="left-column">
+            <div class="section-box">
+                <h2 class="section-title">Обо мне</h2>
+                <img src="master.webp" alt="Мастер маникюра" class="avatar">
+                <div class="content-text">
+                    <p>Привет! Меня зовут Александра, я профессиональный мастер маникюра и педикюра. Моя работа — это сочетание технического мастерства, творческого подхода и внимания к деталям.</p>
+                    <p>Делаю красивые, тонкие и прочные ногти за 1.5 часа: аккуратное покрытие, правильная архитектура, естественный вид.</p>
+                    <p>Работаю с любыми сложностями: отслойки, скручивания, низкие точки роста, ломкость и сколы. Все инструменты проходят полную стерилизацию по СанПиН. Безопасность — мой абсолютный приоритет.</p>
+                    <p>Уютный отдельный кабинет Чай, кофе, комфортная атмосфера. Поболтать или помолчать — чтобы ты могла расслабиться и просто довериться.</p>
+                    <p>Если ищешь модный маникюр, чистую технику и естественные красивые ногти — буду рада видеть тебя!</p>
+                </div>
+                <a href="https://vk.com/album852032298_309594832" class="nav-btn">Портфолио</a>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="education-section">
+                <h2 class="education-title">Обучение и сертификаты</h2>
+                <img src="ivent.webp" alt="Обучение и сертификаты" class="event-image">
+                <div class="content-text">
+                    <p><strong>Профессиональное обучение:</strong><br>
+                    - Nika Nagel (2022–2024)<br>
+                    - ВладМиВа — подология</p>
+                    
+                    <p><strong>Участие в профессиональных мероприятиях:</strong><br>
+                    - NAILSREDA — международный фестиваль мастеров ногтевого сервиса 2022<br>
+                    - STEP BY STEP — всероссийская конференция мастеров маникюра и подологов 2023<br>
+                    - InterCHARM — международный конгресс мастеров ногтевого сервиса 2023–2024<br>
+                    - BEAUTY DAY — юбилейный конгресс nail-мастеров и подологов СНГ 2025</p>
+                </div>
+                <a href="https://vk.com/album852032298_302338877" class="nav-btn">Дипломы</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="contact-image-container">
+            <img src="studio.webp" alt="Студия" class="contact-image">
+        </div>
+        <div class="contact-text">
+            <p>Телефон: +7 (908) 139 93 73</p>
+            <p>Instagram: <a href="https://www.instagram.com/zapililashura">@zapililashura</a></p>
+            <p>ВКонтакте: <a href="https://vk.com/zapililaShura">@zapililashura</a></p>
+            <p>Адрес: г. Воронеж ул. Димитрова, д. 27</p>
+            <p>график работы с 07:00 до 00:00. Работаю по предварительной записи.</p>
+            <a href="https://dikidi.ru/#widget=200492" class="booking-btn">
+                <span class="booking-btn-text">Записаться</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Александра Тельтевская.</p>
+    </footer>
+
+    <script>
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = this.name.value.trim();
+            const phone = this.phone.value.trim();
+            
+            // Валидация
+            if (!name || !phone) {
+                alert('Пожалуйста, заполните все поля.');
+                return;
+            }
+
+            // Подготовка сообщения
+            const message = `🎁 Новый лид с promo.html:\nИмя: ${name}\nТелефон: ${phone}`;
+            const botToken = '7481234567:AAEzXyZ_ABC123defGHI456jklMNO789pqr'; // ← ЗАМЕНИТЕ НА СВОЙ!
+            const chatId = '789012345'; // ← ЗАМЕНИТЕ НА ID @ZapililaShura
+
+            try {
+                const response = await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ chat_id: chatId, text: message, parse_mode: 'HTML' })
+                });
+
+                if (response.ok) {
+                    alert('Спасибо! Открытка уже в пути 💌');
+                    this.reset();
+                } else {
+                    alert('Ошибка отправки. Напишите напрямую в Telegram: @ZapililaShura');
+                }
+            } catch (err) {
+                alert('Не удалось отправить данные. Проверьте подключение к интернету.');
+            }
+        });
+    </script>
+</body>
+</html>
